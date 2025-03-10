@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayatul Kursi - MD Arif Hossen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f1c40f;
+            text-align: center;
+            padding: 30px;
+            overflow: hidden; /* Prevent scrolling before user interacts */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 223, 0, 0.2);
+            display: none; /* Initially hidden until user interacts */
+        }
+        .welcome-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            z-index: 999;
+        }
+        .welcome-overlay h1 {
+            color: #ffcc00;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .continue-btn {
+            background: #f1c40f;
+            color: #121212;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .continue-btn:hover {
+            background: #d4ac0d;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Welcome Overlay -->
+    <div class="welcome-overlay" id="welcome-overlay">
+        <h1 id="welcome-message">Welcome to My Page!</h1>
+        <p>Please take a moment to read Ayatul Kursi. May it bring peace to your heart. 🌙</p>
+        <button class="continue-btn" onclick="hideWelcome()">Continue</button>
+    </div>
+
+    <div class="container" id="main-content">
+        <h1 id="personalized-message">Welcome!</h1>
+        <p id="visit-message"></p>
+        <p id="visit-counter"></p>
+        <p>As you come to my bio, so please read this:</p>
+
+        <h1>MD Arif Hossen</h1>
+        <p>As you come to my bio, so please read this:</p>
+        
+        <h2>📖 Arabic:</h2>
+        <p class="ayah" id="ayah">
+            اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ <br>
+            مَنْ ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ <br>
+            وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۚ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ 
+        </p>
+
+    <h2>📖 বাংলা উচ্চারণ:</h2>
+        <p class="ayah">
+            আল্লাহু লা ইলাহা ইল্লা হুওয়াল হাইয়্যুল কাইয়ুম। লা তা খুজুহু সিনাতু ওয়ালা নাউম। <br>
+            লাহু মা ফিস সামা ওয়াতি ওয়ামা ফিল আরদ। মান জাল্লাজি ইয়াশ ফাউ ইনদাহু ইল্লা বি ইজনিহি, <br>
+            ইয়া লামু মা বাইনা আইদিহিম ওয়ামা খালফাহুম, ওয়ালা ইউ হিতুনা বিশাই ইম মিন ইল মিহি ইল্লা বিমা শা আ, <br>
+            ওয়াসিয়া কুরসি ইউহুস সামা ওয়াতি ওয়াল আরদ, ওয়ালা ইয়া উদুহু হিফজুহুমা ওয়াহুয়াল আলি ইয়ুল আজিম।
+        </p>
+        
+        <h2>📖 বাংলা:</h2>
+        <p class="ayah">
+            “আল্লাহ, তিনি ছাড়া কোনো উপাস্য নেই, তিনি চিরঞ্জীব, চিরস্থায়ী। তাঁকে তন্দ্রা বা নিদ্রা স্পর্শ করে না। <br>
+            আকাশসমূহ ও পৃথিবীতে যা কিছু আছে, সবই তাঁর। কে আছে যে, তাঁর অনুমতি ছাড়া তাঁর নিকট সুপারিশ করতে পারে? <br>
+            তিনি জানেন যা তাদের সামনে এবং যা তাদের পেছনে। আর তারা তাঁর জ্ঞানের কিছুই আয়ত্ত করতে পারে না, তবে তিনি যতটুকু চান তা ছাড়া।<br>
+            তাঁর ‘কুরসি’ আকাশমণ্ডলী ও পৃথিবী পরিব্যাপ্ত করে আছে, এবং এগুলোর সংরক্ষণ তাঁকে ক্লান্ত করে না। তিনি সর্বোচ্চ, সর্বশক্তিমান।” 
+        </p>
+        
+        <h2>📖 English:</h2>
+        <p class="ayah">
+            "Allah! There is no deity except Him, the Ever-Living, the Sustainer of all existence. <br>
+            Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. <br>
+            Who is it that can intercede with Him except by His permission? He knows what is before them and what will be after them, <br>
+            and they encompass not a thing of His knowledge except for what He wills. <br>
+            His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great."
+        </p>
+            </div>    
+
+    <div class="footer">
+        &copy; 2025 Arif. All Rights Reserved.
+    </div>
+
+<script>
+    // Function to hide the welcome overlay and show the main content
+    function hideWelcome() {
+        document.getElementById("welcome-overlay").style.display = "none"; 
+        document.getElementById("main-content").style.display = "block";
+        document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    // Function to ask for user's name and store it in localStorage
+    function askUserName() {
+        let userName = localStorage.getItem("userName");
+        
+        // If no name is stored in localStorage, ask for it
+        if (!userName) {
+            userName = prompt("Please enter your name:");
+            if (userName) {
+                localStorage.setItem("userName", userName); // Save name to localStorage
+            }
+        }
+
+        // If a name is found, update the welcome message
+        if (userName) {
+            document.getElementById("personalized-message").innerText = `Welcome, ${userName}!`;
+            document.getElementById("welcome-message").innerText = `Welcome, ${userName}!`; // Update welcome overlay as well
+        }
+    }
+
+    // Function to update the visit counter information
+    function updateVisitCounter() {
+        let today = new Date().toLocaleDateString();
+        let lastVisitDate = localStorage.getItem("lastVisitDate");
+        let dailyVisits = JSON.parse(localStorage.getItem("dailyVisits")) || {};
+        let lastDayVisits = localStorage.getItem("lastDayVisits") || 0;
+        let monthlyVisits = localStorage.getItem("monthlyVisits") || 0;
+
+        // Update visit statistics
+        if (lastVisitDate !== today) {
+            lastDayVisits = dailyVisits[lastVisitDate] || 0;
+            localStorage.setItem("lastDayVisits", lastDayVisits);
+            dailyVisits[today] = 0;
+        }
+
+        dailyVisits[today] = (dailyVisits[today] || 0) + 1;
+        monthlyVisits++;
+
+        localStorage.setItem("dailyVisits", JSON.stringify(dailyVisits));
+        localStorage.setItem("monthlyVisits", monthlyVisits);
+        localStorage.setItem("lastVisitDate", today);
+
+        // Display the visit counter message
+        document.getElementById("visit-counter").innerText = `Today's Visits: ${dailyVisits[today]}, Last Day's Visits: ${lastDayVisits}, This Month's Visits: ${monthlyVisits}`;
+    }
+
+    // Execute the functions when the page loads
+    window.onload = function() {
+        askUserName();  // Ensure the user name is prompted or shown
+        updateVisitCounter();  // Update the visit counter information
+    };
+</script>
+
+</body>
+</html>
